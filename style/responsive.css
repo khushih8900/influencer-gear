@@ -1,0 +1,328 @@
+/* ===== Extra Small Devices (xs) ===== */
+/* Phones <576px */
+@media (max-width: 575.98px) {
+
+    .container {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        flex-wrap: nowrap;
+        min-width: 0;
+
+
+    }
+
+    .logo a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    .logo {
+        width: 100%;
+    }
+
+
+
+    .hide {
+        position: relative;
+        display: block;
+    }
+
+
+
+
+    .nav {
+        display: none;
+        position: absolute;
+        width: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        left: 2rem;
+        top: 6rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+
+    .nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav ul li {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .nav button {
+        width: 100%;
+        background-color: var(--btn-bg);
+        color: white;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .nav button::after {
+        display: none;
+
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 1rem;
+        border: 1px solid var(--btn-bg);
+
+    }
+
+    .search input {
+        display: block;
+        width: 100%;
+    }
+
+    .shopping {
+        align-self: flex-end;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        width: 100%;
+
+
+    }
+
+    .logo {
+        width: 100%;
+        margin-left: 8rem;
+
+
+    }
+
+
+    .hide {
+        position: relative;
+        display: block;
+    }
+
+
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        width: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        left: 2rem;
+        top: 6rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav ul li {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .nav button {
+        width: 100%;
+        background-color: var(--btn-bg);
+        color: white;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .nav button::after {
+        display: none;
+
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 1rem;
+        border: 1px solid var(--btn-bg);
+
+    }
+
+    .search input {
+        display: block;
+        width: 100%;
+    }
+
+    .shopping {
+        align-self: flex-end;
+        margin-top: 1rem;
+    }
+}
+
+/* ===== Medium Devices (md) ===== */
+/* Tablets ≥768px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        margin-left: 10rem;
+    }
+
+    .hide {
+        position: relative;
+        display: block;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        width: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        left: 2rem;
+        top: 6rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav ul li {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .nav button {
+        width: 100%;
+        background-color: var(--btn-bg);
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        border-radius: 8px;
+    }
+
+    .nav button::after {
+        display: none;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 1rem;
+        border: 1px solid var(--btn-bg);
+    }
+
+    .search input {
+        display: block;
+        width: 100%;
+    }
+
+    .shopping {
+        align-self: flex-end;
+        margin-top: 1rem;
+    }
+}
+
+/* ===== Large Devices (lg) ===== */
+/* Laptops ≥992px */
+/* @media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+    
+
+   
+    .nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .nav button {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    .search {
+        margin-top: 0;
+        width: auto;
+        border: none;
+    }
+
+    .search input {
+        width: auto;
+    }
+
+    .shopping {
+        margin-top: 0;
+    }
+} */
+
+/* ===== Extra Large Devices (xl) ===== */
+/* Desktops ≥1200px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .container {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* ===== Extra Extra Large Devices (xxl) ===== */
+/* Large desktops ≥1400px */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 100%;
+        justify-content: space-between;
+       
+    }
+}
