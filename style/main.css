@@ -28,10 +28,15 @@ ul {
     --rating: rgb(94, 99, 102);
     --stars: rgb(251, 130, 0);
     --footer-p: rgb(217, 219, 225);
-    --section-padding: 3rem 6% ;
+    --section-padding: 2rem 6%;
     --gap: 5rem;
 
 
+}
+
+header {
+    width: 100%;
+    height: 80vh;
 }
 
 .container {
@@ -51,7 +56,7 @@ ul {
     display: flex;
     align-items: center;
     white-space: nowrap;
-    
+
 }
 
 .logo::after {
@@ -73,7 +78,7 @@ ul {
 
 .logo a {
     color: var(--Header-font);
-    font-size: clamp(1.2rem, 2vw, 1.5rem);  
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-weight: 700;
     text-align: left;
 }
@@ -198,4 +203,68 @@ ul {
 
 .hide a {
     font-size: 1.5rem;
+}
+
+/* start hero section */
+.hero {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1rem;
+    padding: var(--section-padding);
+}
+
+.influencer-title {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.influencer-title h1 {
+    color: var(--Header-font);
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 4rem;
+    text-align: left;
+}
+
+.influencer-title p {
+    color: var(--Header-font);
+    font-size: .9rem 16px;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.influencer-title button {
+    border-radius: 41px;
+    padding: 1rem 3rem;
+    background: rgb(224, 44, 109);
+    border: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.influencer-title button span {
+    margin-left: .3rem;
+}
+
+.influencer-products {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.influencer-products img {
+    width: 100%;
+    height: 100%;
 }
