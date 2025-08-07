@@ -1,7 +1,6 @@
 /* ===== Extra Small Devices (xs) ===== */
 /* Phones <576px */
 @media (max-width: 575.98px) {
-
     .container {
         align-items: center;
         justify-content: space-between;
@@ -20,20 +19,14 @@
         text-overflow: ellipsis;
     }
 
-
     .logo {
         width: 100%;
     }
-
-
 
     .hide {
         position: relative;
         display: block;
     }
-
-
-
 
     .nav {
         display: none;
@@ -49,7 +42,6 @@
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         z-index: 999;
     }
-
 
     .nav ul {
         flex-direction: column;
@@ -95,28 +87,35 @@
         align-self: flex-end;
         margin-top: 1rem;
     }
+
+    .hero {
+        width: 100%;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .influencer-title {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .container {
         width: 100%;
-
-
     }
 
     .logo {
         width: 100%;
         margin-left: 8rem;
-
-
     }
-
 
     .hide {
         position: relative;
         display: block;
     }
-
 
     .navigation {
         flex-direction: column;
@@ -185,6 +184,19 @@
     .shopping {
         align-self: flex-end;
         margin-top: 1rem;
+    }
+
+    .hero {
+        width: 100%;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .influencer-title {
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -269,6 +281,19 @@
         align-self: flex-end;
         margin-top: 1rem;
     }
+
+    .hero {
+        width: 100%;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .influencer-title {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* ===== Large Devices (lg) ===== */
@@ -315,6 +340,10 @@
         max-width: 100%;
         justify-content: space-between;
     }
+
+    .hero {
+        width: 100%;
+    }
 }
 
 /* ===== Extra Extra Large Devices (xxl) ===== */
@@ -323,6 +352,11 @@
     .container {
         max-width: 100%;
         justify-content: space-between;
-       
+
+    }
+
+    .hero {
+        width: 100%;
+
     }
 }

@@ -34,9 +34,8 @@ ul {
 
 }
 
-header {
+.header {
     width: 100%;
-    height: 80vh;
 }
 
 .container {
@@ -64,7 +63,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 80%;
+    width: 75%;
     height: 4px;
     background-color: var(--btn-bg);
     transform: scaleX(0.4);
@@ -168,21 +167,32 @@ header {
 .search {
     display: flex;
     align-items: center;
-    border: none;
-
+    border: 1px solid var(--btn-bg);
     border-radius: 8px;
+
 
 
 
 
 }
 
+.search :hover input {
+    display: block;
+}
+
 .search input {
     padding: .5rem 1rem;
     outline: none;
-    display: none;
     border: none;
+    display: none;
     background-color: transparent;
+    transition: width 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    
 }
 
 .search ::placeholder {
@@ -211,7 +221,7 @@ header {
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:1rem;
+    gap: 1rem;
     padding: var(--section-padding);
 }
 
@@ -225,18 +235,16 @@ header {
 
 .influencer-title h1 {
     color: var(--Header-font);
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 4rem;
-    text-align: left;
 }
 
 .influencer-title p {
     color: var(--Header-font);
-    font-size: .9rem 16px;
+    font-size: 1rem 16px;
     font-weight: 600;
     line-height: 2rem;
-    text-align: left;
 }
 
 .influencer-title button {
@@ -250,6 +258,7 @@ header {
     font-weight: 700;
     text-align: left;
     margin: 1rem 0;
+    cursor: pointer;
 }
 
 .influencer-title button span {
@@ -259,12 +268,122 @@ header {
 .influencer-products {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: self-start;
+    justify-content: flex-end;
+}
+
+.img-bg {
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--btn-font);
+    border-radius: 50%;
+    padding: .5rem;
+    border: 3px solid rgba(240, 232, 243, 0.6);
+
+
+}
+
+.img-bg::after {
+    content: '';
+    position: absolute;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    background-color: rgba(162, 155, 254, 0.1);
+    left: 4rem;
+    bottom: 4rem;
+    z-index: 2;
+
+}
+
+.img-bg {
+
+    position: relative;
+}
+
+.img-bg img {
+    position: relative;
+    z-index: 4;
+    transform: rotate(3deg);
+
+}
+
+.img-bg img {
+    width: 100%;
+    height: 100%;
+}
+
+/* sponsor section */
+.main-section {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+}
+
+.sponsor-slider {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.sponsor-slider {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    height: 30vh;
     justify-content: center;
+    align-items: center;
+    display: flex;
+
 }
 
 
-.influencer-products img {
+.sponsor-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
     width: 100%;
-    height: 100%;
+    background: linear-gradient(to right, transparent 0%, #332e2e 50%, transparent 100%);
+    z-index: 1;
+}
+
+
+.sponsor-slider::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, transparent 0%, #332e2e 50%, transparent 100%);
+    z-index: 1;
+}
+
+
+
+.slide-track {
+    display: flex;
+    width: calc(150px * 14);
+    gap: 2rem;
+
+    animation: scroll 60s linear infinite;
+}
+
+.slide-track img {
+    height: 5rem;
+    width: 9rem;
+    margin: 0 15px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 7));
+    }
 }

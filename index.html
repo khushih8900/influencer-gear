@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- start header section -->
-    <header>
+    <header class="header">
       <!-- nav-bar -->
       <nav class="container">
         <div class="hide menu-toggle">
@@ -28,13 +28,14 @@
               <li><button type="submit">Log In</button></li>
             </ul>
             <div class="search">
-              <input
-                type="search"
-                name="search"
-                id=""
-                placeholder="search here..."
-              />
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="#" class="search-bar">
+                <input
+                  type="search"
+                  name="search"
+                  id=""
+                  placeholder="search here..." />
+                <i class="fa-solid fa-magnifying-glass"></i
+              ></a>
             </div>
           </div>
           <div class="shopping">
@@ -49,18 +50,42 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
             vestibulum sed scelerisque eros. Lectus faucibus.
           </p>
-          <button type="submit">Preebook now <span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+          <button type="submit">
+            Preebook now
+            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          </button>
         </div>
         <div class="influencer-products">
-            <img src="images/main camera.png" alt="">
-
           <div class="img-bg">
+            <img src="images/main-camera.png" alt="" />
           </div>
         </div>
       </section>
     </header>
     <!-- start main section -->
-    <main></main>
+    <section class="main-section">
+      <!-- sponsor section -->
+      <section class="sponsor-slider">
+        <div class="slide-track">
+          <img src="logos/Alibaba.svg" alt="Alibaba" />
+          <img src="logos/Amazon.svg" alt="Amazon" />
+          <img src="logos/Daraz.pk Logo.svg" alt="Daraz" />
+          <img src="logos/Ebay.svg" alt="Ebay" />
+          <img src="logos/Rakuten.svg" alt="Rakuten" />
+          <img src="logos/Target.svg" alt="Walmart" />
+          <img src="logos/Walmart.svg" alt="Target" />
+
+          <!-- Loop effect  -->
+          <img src="logos/Alibaba.svg" alt="Alibaba" />
+          <img src="logos/Amazon.svg" alt="Amazon" />
+          <img src="logos/Daraz.pk Logo.svg" alt="Daraz" />
+          <img src="logos/Ebay.svg" alt="Ebay" />
+          <img src="logos/Rakuten.svg" alt="Rakuten" />
+          <img src="logos/Target.svg" alt="Walmart" />
+          <img src="logos/Walmart.svg" alt="Target" />
+        </div>
+      </section>
+    </section>
     <!-- start footer section -->
     <footer></footer>
   </body>
